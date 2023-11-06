@@ -1,0 +1,95 @@
+.main-div{
+    padding :10px;
+    background-color: black;
+    
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30vh;
+}
+
+
+
+.btn1,.btn2,.btn3{
+    padding-right: 10px;
+    margin-top: 10px;
+
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    text-align: right;
+    position: relative;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.parent-div{
+    display: 'flex';
+    justify-content: 'space-between';
+    padding-top: 20px;
+
+    /* flex: 1; */
+}
+
+.row{
+    display: flex;
+  align-items: center;
+}
+
+.left-div{
+    flex: 1;
+}
+
+.right-div{
+    flex: 1;
+    text-align: right;
+}
+
+.para{
+    margin-top: 20px;
+    text-align: left;
+    color: #fff;
+    letter-spacing: 1.5px;
+    
+}
+
+.right-heading{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: right;
+  
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.my-name{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.hor-line{
+    background-color: white;
+    height: 5px;
+}
+
+.lower-para{
+    background-color: black;
+    text-align: center;
+    padding: 4rem ;
+    border-top: 1px solid #444;
+    color: #eee;
+    font-size: 0.9rem;
+
+    padding: 10px;
+  
+
+    
+}
+
+
+
