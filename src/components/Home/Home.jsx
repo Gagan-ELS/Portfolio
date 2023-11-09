@@ -19,13 +19,13 @@ function Home() {
       </div>
 
       <div className="left-buttons">
-        <button>
+        <button className="left-btn">
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </button>
-        <button>
+        <button className="left-btn">
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </button>
-        <button>
+        <button className="left-btn">
           <FontAwesomeIcon icon={faInstagram} size="2x" />
         </button>
       </div>
