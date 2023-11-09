@@ -20,15 +20,26 @@ function Home() {
         </div>
 
         <div className="left-buttons">
-          <button className="left-btn">
-            <FontAwesomeIcon icon={faLinkedin} size="2x" />
-          </button>
-          <button className="left-btn">
-            <FontAwesomeIcon icon={faGithub} size="2x" />
-          </button>
-          <button className="left-btn">
-            <FontAwesomeIcon icon={faInstagram} size="2x" />
-          </button>
+          <a
+            href="https://www.linkedin.com/in/gagandeep-n-4309971b8/"
+            target={"_blank"}
+          >
+            <button className="left-btn">
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </button>
+          </a>
+
+          <a href="https://github.com/Gagan-ELS" target={"_blank"}>
+            <button className="left-btn">
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+            </button>
+          </a>
+
+          <a href="https://www.instagram.com/gagan_deep_n/" target={"_blank"}>
+            <button className="left-btn">
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </button>
+          </a>
         </div>
       </div>
     </section>
