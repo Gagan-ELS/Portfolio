@@ -7,7 +7,7 @@ function Navbar() {
       <div className="container-fluid navbar-brand">
         <span className="align-middle">
           <img
-            src="profile.png"
+            src="download.png"
             alt="profile picture"
             width="40"
             height="40"
