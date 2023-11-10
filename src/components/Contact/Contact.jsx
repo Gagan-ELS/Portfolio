@@ -1,6 +1,28 @@
 import "./Contact.css";
 
 function Contact() {
+  const send_message = () => {
+    let userName = document.getElementById("name");
+    let userEmail = document.getElementById("email");
+    let messageTextarea = document.getElementById("message");
+
+    let textMessage =
+      userName.value + "\n" + userEmail.value + "\n" + messageTextarea.value;
+    var xhr = new XMLHttpRequest();
+    var url =
+      "https://api.telegram.org/bot6423331269:AAHlbrTzX9HUhbJHI1q4vmCMcu0QAPWrnIQ/sendMessage";
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    var data = JSON.stringify({
+      chat_id: 5182908930,
+      text: textMessage,
+    });
+
+    xhr.send(data);
+
+    messageTextarea.value = "";
+  };
+
   return (
     <section id="contact">
       <div className="main-container">
@@ -71,7 +93,11 @@ function Contact() {
                   </div>
 
                   <div className="d-flex justify-content-end">
-                    <button type="submit" className="right-btn">
+                    <button
+                      type="submit"
+                      className="right-btn"
+                      onClick={send_message}
+                    >
                       SUBMIT
                     </button>
                   </div>
