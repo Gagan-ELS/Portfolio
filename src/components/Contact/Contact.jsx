@@ -34,7 +34,7 @@ function Contact() {
           </h1>
         </div>
         <div className="text-primaryy">
-          <p>
+          <p className="contact-p">
             Feel free to Contact me by submitting the form below and I will get
             back to you as soon as possible
           </p>
@@ -56,6 +56,7 @@ function Contact() {
                     <input
                       type="text"
                       id="name"
+                      name="name"
                       className="form-control inputs"
                       placeholder="Enter Your Name"
                       style={{ marginTop: "10px" }}
@@ -72,6 +73,7 @@ function Contact() {
                     <input
                       type="email"
                       id="email"
+                      name="email"
                       className="form-control inputs"
                       placeholder="Enter Your Email"
                       style={{ marginTop: "10px" }}
@@ -89,6 +91,7 @@ function Contact() {
                       id="message"
                       className="form-control inputs"
                       rows="4"
+                      name="message"
                       placeholder="Enter Your Message"
                       style={{ marginTop: "10px" }}
                     ></textarea>
