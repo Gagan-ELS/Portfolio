@@ -20,6 +20,8 @@ function Contact() {
 
     xhr.send(data);
 
+    userName.value = "";
+    userEmail.value = "";
     messageTextarea.value = "";
   };
 
