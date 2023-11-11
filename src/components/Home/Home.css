@@ -23,7 +23,19 @@
     letter-spacing: 3px;
     color: #111;
     font-weight: 700;
+    border-right: 0.05em solid black; /* Vertical blinking cursor */
+      animation: typing 5s steps(50, end) infinite;
+      overflow: hidden;
+      white-space: nowrap;
   }
+
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+ 
   
   .text-primaryy {
     font-size: 1.5rem; 

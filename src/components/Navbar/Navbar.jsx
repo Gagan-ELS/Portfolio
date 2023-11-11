@@ -17,11 +17,13 @@ function Navbar() {
               className="d-inline-block align-middle"
               style={{ marginRight: "10px" }}
             />
-            <button>
-              <h5>
-                <b>GAGANDEEP N</b>
-              </h5>
-            </button>
+            <a href="#home">
+              <button>
+                <h5>
+                  <b>GAGANDEEP N</b>
+                </h5>
+              </button>
+            </a>
           </span>
 
           <span className="navbar-text align-middle">
