@@ -37,24 +37,36 @@ function About() {
               <h3 class="about-get-to-know">My Skills</h3>
               <div class="row">
                 <div class="col-sm-4">
-                  <p className="skills">HTML</p>
+                  <p className="skills">
+                    <img src="html-logo.png" alt="hrml-logo"></img>
+                  </p>
                 </div>
                 <div class="col-sm-4">
-                  <p className="skills">CSS</p>
+                  <p className="skills">
+                    <img src="css-logo.png" alt="css-logo"></img>
+                  </p>
                 </div>
                 <div class="col-sm-4">
-                  <p className="skills">Javascript</p>
+                  <p className="skills">
+                    <img src="js-alt-logo.png" alt="js-logo"></img>
+                  </p>
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-4">
-                  <p className="skills">React</p>
+                  <p className="skills">
+                    <img src="react2-logo.png" alt="react-logo"></img>
+                  </p>
                 </div>
                 <div class="col-sm-4">
-                  <p className="skills">Python</p>
+                  <p className="skills">
+                    <img src="python3-logo.png" alt="python-logo"></img>
+                  </p>
                 </div>
                 <div class="col-sm-4">
-                  <p className="skills">C</p>
+                  <p className="skills">
+                    <img src="C-logo.png" alt="C-logo"></img>
+                  </p>
                 </div>
               </div>
             </div>
