@@ -23,17 +23,42 @@
     letter-spacing: 3px;
     color: #111;
     font-weight: 700;
-    border-right: 0.05em solid black; /* Vertical blinking cursor */
-      animation: typing 5s steps(50, end) infinite;
+    /* border-right: 0.05em solid black; /* Vertical blinking cursor */
+      /* animation: typing 5s steps(50, end) infinite;
       overflow: hidden;
-      white-space: nowrap;
+      white-space: nowrap;  */
+  }
+
+  .heading-primary{
+    color: black;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid black; 
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em; 
+    animation: 
+      typing 4s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+ 
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
   }
 
 
-  @keyframes typing {
+  /* @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
-  }
+  } */
 
  
   

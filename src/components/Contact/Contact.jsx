@@ -1,13 +1,26 @@
 import "./Contact.css";
+import React, { useState } from "react";
 
 function Contact() {
-  const send_message = () => {
-    let userName = document.getElementById("name");
-    let userEmail = document.getElementById("email");
-    let messageTextarea = document.getElementById("message");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-    let textMessage =
-      userName.value + "\n" + userEmail.value + "\n" + messageTextarea.value;
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const send_message = (e) => {
+    e.preventDefault();
+
+    let textMessage = `${formData.name}\n${formData.email}\n${formData.message}`;
+
     var xhr = new XMLHttpRequest();
     var url =
       "https://api.telegram.org/bot6423331269:AAHlbrTzX9HUhbJHI1q4vmCMcu0QAPWrnIQ/sendMessage";
@@ -20,9 +33,11 @@ function Contact() {
 
     xhr.send(data);
 
-    userName.value = "";
-    userEmail.value = "";
-    messageTextarea.value = "";
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (
@@ -35,7 +50,7 @@ function Contact() {
         </div>
         <div className="text-primaryy">
           <p className="contact-p">
-            Feel free to Contact me by submitting the form below and I will get
+            Feel free to Contact me by submitting the form below, and I will get
             back to you as soon as possible
           </p>
         </div>
@@ -60,6 +75,8 @@ function Contact() {
                       className="form-control inputs"
                       placeholder="Enter Your Name"
                       style={{ marginTop: "10px" }}
+                      value={formData.name}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="form-group">
@@ -77,6 +94,8 @@ function Contact() {
                       className="form-control inputs"
                       placeholder="Enter Your Email"
                       style={{ marginTop: "10px" }}
+                      value={formData.email}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="form-group">
@@ -94,6 +113,8 @@ function Contact() {
                       name="message"
                       placeholder="Enter Your Message"
                       style={{ marginTop: "10px" }}
+                      value={formData.message}
+                      onChange={handleChange}
                     ></textarea>
                   </div>
 
